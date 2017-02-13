@@ -1,0 +1,116 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
+body, #app {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex: 1;
+}
+
+.app-container {
+  margin: 10px auto;
+  padding: 50px;
+
+  width: 550px;
+
+  .add-bookmark-container {
+    background-color: #CCCCCC;
+    padding: 0;
+  }
+
+  .add-bookmark {
+    .title,
+    .url,
+    .move-to,
+    .folders{
+      display: flex;
+      flex-direction: row;
+
+      line-height: 30px;
+
+      padding: 10px;
+
+      label {
+        padding: 0 10px;
+
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .action {
+    display: flex;
+    justify-content: flex-end;
+
+    .btn {
+      margin: 15px;
+    }
+  }
+
+  .bookmarks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 15px;
+
+    .bookmark-uncategorized {
+      margin: auto;
+
+      cursor: pointer;
+
+      .title {
+        div {
+          width: fit-content;
+          margin: auto;
+        }
+      }
+    }
+
+    .folder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .name {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .bookmark-name {
+          display: flex;
+          flex-direction: row;
+
+          padding: 0 8px;
+
+          .bookmark {
+            padding-left: 10px;
+          }
+
+          span {
+            padding-left: 15px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      .title {
+        display: flex;
+        justify-content: center;
+        padding-left: 25px;
+
+        width: fit-content;
+        margin: auto;
+
+        cursor: pointer;
+      }
+    }
+
+    .bg {
+      background-color: cornflowerblue;
+    }
+  }
+}
